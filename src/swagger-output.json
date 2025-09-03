@@ -129,10 +129,10 @@
                   "example": "any"
                 },
                 "quantity": {
-                  "example": "any"
+                  "example": 1
                 },
                 "category": {
-                  "example": "number"
+                  "example": "any"
                 }
               }
             }
