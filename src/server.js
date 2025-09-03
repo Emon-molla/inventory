@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser"
 import swaggerUi from "swagger-ui-express"
 import fs from "fs"
 import path from "path"
+import cors from "cors"
 
 const swaggerDocumentPath = path.resolve("./src/swagger-output.json");
 const swaggerDocument = JSON.parse(fs.readFileSync(swaggerDocumentPath, "utf-8"));
@@ -20,6 +21,7 @@ const port = process.env.PORT
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
+app.use(cors({origin:"*"}))
 
 
 app.use('/api-docs',swaggerUi.serve,swaggerUi.setup(swaggerDocument))
