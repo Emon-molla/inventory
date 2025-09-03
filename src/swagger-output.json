@@ -8,7 +8,7 @@
   "host": "inventory-4-g8tu.onrender.com",
   "basePath": "/api",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/register": {

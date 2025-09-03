@@ -5,7 +5,9 @@ const doc = {
     title: 'APIs',
     description: 'An inventory project API testing.'
   },
-  host: 'inventory-4-g8tu.onrender.com'
+  host: 'inventory-4-g8tu.onrender.com',
+  basePath: "/api",   
+  schemes: ["https"] 
 };
 
 const outputFile = './swagger-output.json';
