@@ -5,7 +5,7 @@ const doc = {
     title: 'APIs',
     description: 'An inventory project API testing.'
   },
-  host: 'localhost:3001'
+  host: 'https://inventory-4-g8tu.onrender.com'
 };
 
 const outputFile = './swagger-output.json';

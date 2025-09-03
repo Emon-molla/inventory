@@ -5,7 +5,7 @@
     "description": "An inventory project API testing.",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "https://inventory-4-g8tu.onrender.com",
   "basePath": "/api",
   "schemes": [
     "http"
