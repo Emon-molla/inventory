@@ -10,12 +10,16 @@ const productSchema = new Schema({
         required:true
     },
     price:{
-        type:String,
+        type:Number,
         required:true
     },
     category:{
         type:String,
         required:true
+    },
+    stock:{
+        type:Number,
+        default:0
     }
 
 },{timestamps:true})
