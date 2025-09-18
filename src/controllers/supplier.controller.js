@@ -38,3 +38,22 @@ export const getSupplier = async (req,res) =>{
         console.log("Internal server error",error)
     }
 }
+
+export const deleteSupplier = async (req,res) =>{
+    try {
+        const {id} = req.params
+
+        const supplier = await Supplier.findByIdAndDelete(id)
+
+        if(!supplier){
+            return res.status(400).json({message:"spplier unidefind."})
+        }
+
+        return res.status({
+            message:"supplier deleted successfully.",
+            suppliername:supplier.name
+        })
+    } catch (error) {
+        console.log("Internal server error",error)
+    }
+}

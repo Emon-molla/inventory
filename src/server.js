@@ -4,6 +4,7 @@ import { connection } from "./database/db.js"
 import authRouter from './routes/auth.route.js'
 import productRouter from './routes/product.route.js'
 import supplierRouter from "./routes/supplier.route.js"
+import saleRouter from "./routes/sale.route.js"
 import cookieParser from "cookie-parser"
 import swaggerUi from "swagger-ui-express"
 import fs from "fs"
@@ -31,6 +32,7 @@ app.use('/api-docs',swaggerUi.serve,swaggerUi.setup(swaggerDocument))
 app.use('/api',authRouter)
 app.use('/api',productRouter)
 app.use('/api',supplierRouter)
+app.use('/api',saleRouter)
 
 app.listen(port,()=>{
     connection()
