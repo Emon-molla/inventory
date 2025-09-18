@@ -129,7 +129,7 @@
                   "example": "any"
                 },
                 "quantity": {
-                  "example": 1
+                  "example": "any"
                 },
                 "category": {
                   "example": "any"

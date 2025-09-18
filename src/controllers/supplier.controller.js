@@ -24,3 +24,17 @@ export const createSupplier = async (req,res) =>{
         console.log("Internal server error",error)
     }
 }
+
+export const getSupplier = async (req,res) =>{
+    try {
+        const suppliers = await Supplier.find()
+
+        res.status(200).json({
+            message:"All suppliers.",
+            suppliers
+        })
+        
+    } catch (error) {
+        console.log("Internal server error",error)
+    }
+}
