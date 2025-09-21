@@ -8,7 +8,7 @@ const router = express.Router();
 // router.use(auth)
 router.post('/add-product',roleMiddleware(['admin']),addProduct)
 router.get('/get-products',getProducts)
-router.post('/update-product/:id',roleMiddleware(["admin","manager"]),updateProduct)
+router.put('/update-product/:id',roleMiddleware(["admin","manager"]),updateProduct)
 router.post('/delete-product/:id',roleMiddleware(["admin","manager"]),daleteProduct)
 
 export default router;
